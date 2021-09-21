@@ -1,0 +1,7 @@
+{
+    "cmake.configureOnOpen": false,
+    "cmake.sourceDirectory": "${workspaceFolder}/llvm-project/llvm",
+    "cmake.buildDirectory": "${workspaceFolder}/build/${buildType}/${variant:platform}",
+    "C_Cpp.dimInactiveRegions": false,
+    "git.ignoreLimitWarning": true
+}

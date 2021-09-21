@@ -1,0 +1,18 @@
+[
+  {
+    "name": "clang-aarch64-linux",
+    "toolchainFile":  "${workspaceFolder}/.vscode/clang-aarch64-linux.cmake" 
+  },
+  {
+    "name": "clang-arm-linux",
+    "toolchainFile":  "${workspaceFolder}/.vscode/clang-arm-linux.cmake" 
+  },
+  {
+    "name": "aarch64-windows-clang-cl",
+    "environmentSetupScript": "C:/BuildTools/VC/Auxiliary/Build/vcvarsx86_arm64.bat",
+    "compilers": {
+      "C": "C:\\Users\\tcwg\\source\\llvm-12.0.0-rc1\\bin\\clang-cl.exe",
+      "CXX": "C:\\Users\\tcwg\\source\\llvm-12.0.0-rc1\\bin\\clang-cl.exe"
+    }
+  }
+]

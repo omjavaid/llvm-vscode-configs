@@ -65,6 +65,29 @@
                     "CMAKE_CXX_LINK_EXECUTABLE" :"<CMAKE_LINKER> <FLAGS> <CMAKE_CXX_LINK_FLAGS> <LINK_FLAGS> <OBJECTS> -o <TARGET> <LINK_LIBRARIES>"
                 }
             },
+            "host-winx64": {
+                "short": "host-winx64",
+                "long": "Native build for x86_64 Windows host",
+                "settings": {
+                    "LLVM_NATIVE_ARCH" : "x86_64",
+                    "LLVM_HOST_TRIPLE" : "x86_64-windows-msvc",
+                    "CMAKE_C_FLAGS" : "--target=x86_64-pc-windows-msvc",
+                    "CMAKE_CXX_FLAGS" : "--target=x86_64-pc-windows-msvc",
+                    "LLVM_DEFAULT_TARGET_TRIPLE" : "x86_64-windows-msvc",
+
+                    "LLVM_ENABLE_RTTI" : "True",
+                    "CMAKE_CXX_STANDARD" : "14",
+                    "CMAKE_CXX_STANDARD_REQUIRED" : "YES",
+                    "HAVE_CXX_ATOMICS_WITHOUT_LIB" : "True",
+                    "HAVE_CXX_ATOMICS64_WITHOUT_LIB" : "True",
+
+                    "SWIG_EXECUTABLE" : "C:/Users/User/Downloads/swigwin-4.0.2/swig.exe",
+
+                    "CMAKE_MAKE_PROGRAM" : "C:/Users/User/Downloads/ninja-win/ninja.exe",
+                    "CMAKE_LINKER" : "lld-link",
+                    "CMAKE_CXX_LINK_EXECUTABLE" :"<CMAKE_LINKER> <FLAGS> <CMAKE_CXX_LINK_FLAGS> <LINK_FLAGS> <OBJECTS> -o <TARGET> <LINK_LIBRARIES>"
+                }
+            },
             "cross-aarch64-linux" : {
                 "short": "cross-aarch64-linux",
                 "long": "Cross build for AArch64 Linux target",
@@ -131,3 +154,4 @@
         }
     }
 }
+

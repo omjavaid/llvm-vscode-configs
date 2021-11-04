@@ -69,6 +69,9 @@
         "thread": "cpp",
         "variant": "cpp",
         "*.inc": "cpp",
-        "*.def": "cpp"
-    }
+        "*.def": "cpp",
+        "*.rh": "cpp"
+    },
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
 }
+

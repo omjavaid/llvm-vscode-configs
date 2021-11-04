@@ -11,8 +11,9 @@
     "name": "aarch64-windows-clang-cl",
     "environmentSetupScript": "C:/BuildTools/VC/Auxiliary/Build/vcvarsx86_arm64.bat",
     "compilers": {
-      "C": "C:\\Users\\tcwg\\source\\llvm-12.0.0-rc1\\bin\\clang-cl.exe",
-      "CXX": "C:\\Users\\tcwg\\source\\llvm-12.0.0-rc1\\bin\\clang-cl.exe"
+      "C": "C:\\BuildTools\\LLVM-13.0.0-woa64\\bin\\clang-cl.exe",
+      "CXX": "C:\\BuildTools\\LLVM-13.0.0-woa64\\bin\\clang-cl.exe"
+      
     }
   }
 ]

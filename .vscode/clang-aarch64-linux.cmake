@@ -1,8 +1,8 @@
 set(TARGET_TRIPLE "aarch64-linux-gnu")
 
-set(CMAKE_C_COMPILER "/usr/bin/clang-10")
+set(CMAKE_C_COMPILER "/home/omair/work/tools/clang+llvm-13.0.0-x86_64-linux-gnu-ubuntu-16.04/bin/clang")
 
-set(CMAKE_CXX_COMPILER "/usr/bin/clang++-10")
+set(CMAKE_CXX_COMPILER "/home/omair/work/tools/clang+llvm-13.0.0-x86_64-linux-gnu-ubuntu-16.04/bin/clang++")
 
 set(CMAKE_LIBRARY_ARCHITECTURE "${TARGET_TRIPLE}")
 

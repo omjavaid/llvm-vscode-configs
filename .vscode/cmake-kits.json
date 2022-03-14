@@ -14,13 +14,24 @@
       "C": "C:\\BuildTools\\LLVM-13.0.0-woa64\\bin\\clang-cl.exe",
       "CXX": "C:\\BuildTools\\LLVM-13.0.0-woa64\\bin\\clang-cl.exe"
       
+    }
   },
   {
     "name": "x86_64-pc-windows-clang-cl",
-    "environmentSetupScript": "c:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Auxiliary/Build/vcvars64.bat",
+    "environmentSetupScript": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Auxiliary\\Build\\vcvars64.bat",
     "compilers": {
       "C": "clang-cl",
       "CXX": "clang-cl"
+    },
+    "cmakeSettings": {
+      "CMAKE_MAKE_PROGRAM": "C:\\Users\\omair\\Desktop\\work\\llvm-dev\\ninja-win\\ninja.exe"
+    }
+  },
+  {
+    "name": "Clang 13.0.0 x86_64-pc-linux-gnu",
+    "compilers": {
+      "C": "/home/omair/work/tools/clang+llvm-13.0.0-x86_64-linux-gnu-ubuntu-16.04/bin/clang",
+      "CXX": "/home/omair/work/tools/clang+llvm-13.0.0-x86_64-linux-gnu-ubuntu-16.04/bin/clang++"
     }
   }
 ]

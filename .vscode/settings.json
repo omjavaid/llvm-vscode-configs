@@ -2,6 +2,7 @@
     "cmake.configureOnOpen": false,
     "cmake.sourceDirectory": "${workspaceFolder}/llvm",
     "cmake.buildDirectory": "${workspaceFolder}/build/${buildType}/${variant:platform}",
+    "cmake.generator": "Ninja",
     "C_Cpp.dimInactiveRegions": false,
     "git.ignoreLimitWarning": true,
     "files.associations": {
@@ -70,7 +71,8 @@
         "variant": "cpp",
         "*.inc": "cpp",
         "*.def": "cpp",
-        "*.rh": "cpp"
+        "*.rh": "cpp",
+        "unordered_set": "cpp"
     },
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
 }

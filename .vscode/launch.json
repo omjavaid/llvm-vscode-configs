@@ -5,12 +5,32 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(gdb) Launch",
+            "name": "(gdb attach) Debug LLDB on Linux",
+            "type": "cppdbg",
+            "request": "attach",
+            "program": "${workspaceFolder}/build/Debug/host-linux/bin/lldb",
+            "processId": "${command:pickProcess}",
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description":  "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "Debug LLDB UnitTests",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/Debug/host-linux/bin/lldb",
-            "args": [],
-            "stopAtEntry": false,
+            "program": "${workspaceFolder}/build/Debug/host-linux/tools/lldb/unittests/Utility/UtilityTests",
+            "args": ["--gtest_filter=RecordReplayTest.InstrumentedFoo"],
+            "stopAtEntry": true,
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": false,

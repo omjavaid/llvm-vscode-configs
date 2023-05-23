@@ -7,8 +7,12 @@
                 "long": "Emit debug information without performing optimizations",
                 "buildType": "Debug",
                 "settings": {
-                    "LLVM_OPTIMIZED_TABLEGEN" : "ON"
-                }               
+                    "CMAKE_INSTALL_PREFIX" : "${workspaceFolder}/install",
+                    "LLVM_OPTIMIZED_TABLEGEN" : "ON",
+                    "LLVM_USE_SPLIT_DWARF" : "ON",
+                    "LLVM_USE_LINKER" : "lld",
+                    "LLVM_PARALLEL_LINK_JOBS" : "2"
+                }
             },
             "Release": {
                 "short": "Release",
@@ -151,7 +155,6 @@
                 "short": "flang",
                 "long": "flang build configuration",
                 "settings": {
-                    "CMAKE_INSTALL_PREFIX" : "${workspaceFolder}/install",
                     "CMAKE_CXX_STANDARD" : "17",
                     "CMAKE_EXPORT_COMPILE_COMMANDS" : "ON",
                     "CMAKE_CXX_LINK_FLAGS" : "-Wl,-rpath,$LD_LIBRARY_PATH",
@@ -159,8 +162,7 @@
                     "LLVM_ENABLE_ASSERTIONS" : "ON",
                     "LLVM_TARGETS_TO_BUILD" : ["host"],
                     "LLVM_LIT_ARGS" : ["-v"],
-                    "LLVM_ENABLE_PROJECTS" : ["clang", "flang", "lld", "mlir", "openmp"],
-                    "LLVM_ENABLE_RUNTIMES" : ["compiler-rt"],
+                    "LLVM_ENABLE_PROJECTS" : ["clang", "flang", "mlir"],
                     "LLVM_PARALLEL_LINK_JOBS" : "4"
                 }
             }
